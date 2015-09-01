@@ -21,19 +21,19 @@ RSpec.configure do |config|
       roster.destroy()
     end
 
-    Player.all().each do |player|
+    Player.all().each() do |player|
       player.destroy()
     end
 
-    Kicker.all().each do |kicker|
+    Kicker.all().each() do |kicker|
       kicker.destroy()
     end
 
-    Pitcher.all().each do |pitcher|
+    Pitcher.all().each() do |pitcher|
       pitcher.destroy()
     end
 
-    Fielder.all().each do |fielder|
+    Fielder.all().each() do |fielder|
       fielder.destroy()
     end
   end
