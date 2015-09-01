@@ -1,3 +1,3 @@
 class Fielder < ActiveRecord::Base
-  belongs_to(:players)
+  belongs_to(:player)
 end
