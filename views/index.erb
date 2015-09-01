@@ -1,0 +1,26 @@
+<div class = "jumbotron">
+  <h1>Kick Statter:</h1>
+  <h3>Kickin' stats and taking names!</h3>
+</div>
+
+  <% if @team.any?() %>
+
+    <h3>Here are the teams:</h3>
+
+    <ul>
+      <% @team.each() do |team| %>
+        <li><a href="/teams/<%= team.id() %>"><%= team.name() %></a></li>
+    </ul>
+
+  <% else %>
+
+    <h3>There are no teams, enter one below!</h3>
+
+  <% end %>
+
+  <form action="/teams" method="post">
+    <label for="team">Add a team:</label>
+    <input type="text" name="team" id="name">
+
+    <button type="submit" class="btn-btn danger">Submit</button>
+  </form>
