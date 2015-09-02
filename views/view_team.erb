@@ -1,8 +1,8 @@
 <div class="jumbotron">
-  <h1>Team Record</h1>
+  <h1><%= @team.name() %> Record</h1>
 </div>
 
-  <form action="/team/<%= @team.id() %>" method="post">
+  <form action="/team/<%= @team.id() %>/record" method="post">
     <input type="hidden" value="<%= @team.id() %>">
     <input type="hidden" name="_method" value="patch">
     <label for="win">Wins:</label>
@@ -19,7 +19,6 @@
 
   <thead>
     <tr>
-      <th>Teams Name</th>
       <th>Wins</th>
       <th>Loss</th>
       <th>Draw</th>
@@ -44,7 +43,7 @@
         <th>Jersey Number</th>
       </tr>
     </thead>
-    <% @roster.players.each() do |player| %>
+    <% @team.players.each() do |player| %>
     <tr>
       <td><%= player.name() %></td>
       <td><%= player.position() %></td>
@@ -56,9 +55,10 @@
   <h4>There are no players on the roster yet.</h4>
 <% end %>
 
-<form class="form-inline" action="/roster/:id/player" method="post">
+<form class="form-inline" action="/team/<%= @team.id() %>/player" method="post">
     <label for="name"></label>
     <input type="text" name="name" placeholder="Name" required>
+    <input type="hidden" name="team_id" value="<%= @team.id() %>">
 
     <label for="position"></label>
     <input type="text" name="position" placeholder="Position" required>

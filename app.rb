@@ -25,8 +25,21 @@ get("/team/:id") do
   erb(:view_team)
 end
 
-post("/roster/:id/player") do
-  players = params.fetch("players")
-  Player.create(:name => name, :position => position, :jersey_number => jersey_number)
-  redirect("/team/:id")
+post("/team/:id/player") do
+  # id = params.fetch('id').to_i()
+  @team = Team.find(params.fetch('id').to_i())
+  name = params.fetch("name")
+  position = params.fetch("position")
+  jersey_number = params.fetch("jersey_number")
+  @team.players.create(:name => name, :position => position, :jersey_number => jersey_number)
+  redirect("/team/#{@team.id()}")
+end
+
+patch("/team/:id/record") do
+  @team = Team.find(params.fetch('id').to_i())
+  win = params.fetch("win")
+  loss = params.fetch("loss")
+  draw = params.fetch("draw")
+  @team.update(:win => win, :loss => loss, :draw => draw)
+  redirect("/team/#{@team.id()}")
 end
