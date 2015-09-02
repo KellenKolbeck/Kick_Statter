@@ -19,10 +19,9 @@ post("/teams") do
 end
 
 get("/team/:id") do
-  binding.pry
   id = params.fetch('id').to_i()
   @team = Team.find(id)
-  @roster = @team.roster()
+  @player = @team.players()
   erb(:view_team)
 end
 
