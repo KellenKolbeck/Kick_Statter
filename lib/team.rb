@@ -1,4 +1,4 @@
 class Team < ActiveRecord::Base
-  has_one(:roster)
+  has_many(:players)
   validates(:name, {presence: true})
 end

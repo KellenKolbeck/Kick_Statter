@@ -34,12 +34,7 @@
   </table>
 
   <h1>Here is the team's roster</h1>
-
-  <% if @player.any?() %>
-      <% @roster.each() do |roster| %>
-        roster.players()
-        <% binding.pry %>
-      <% end %>
+<% if @roster.players.any?() %>
   <h3>Roster:</h3>
   <table class="table table-striped table-hover">
     <thead>
