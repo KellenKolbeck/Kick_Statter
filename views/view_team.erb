@@ -41,13 +41,21 @@
         <th>Name</th>
         <th>Position</th>
         <th>Jersey Number</th>
+        <th></th>
       </tr>
     </thead>
     <% @team.players.each() do |player| %>
     <tr>
-      <td><%= player.name() %></td>
+      <td><a href="/player/<%= player.id() %>"><%= player.name() %></a></td>
       <td><%= player.position() %></td>
       <td><%= player.jersey_number() %></td>
+      <td>
+        <form id="form_id" class="form-inline" action="/team/:id" method="post">
+      <input type="hidden" name="player_id" value="<%= player.id() %>">
+      <input type="hidden" name="_method" value="delete">
+      <button type="submit" class="btn btn-danger btn-xs">x</button>
+    </form>
+      </td>
     </tr>
     <% end %>
   </table>
@@ -68,3 +76,6 @@
 
     <button type="submit" class="btn btn-primary">Add Player</button>
 </form>
+
+<br>
+<h5><a href="/">Home</a></h5>
