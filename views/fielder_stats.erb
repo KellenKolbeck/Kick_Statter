@@ -1,0 +1,13 @@
+<h3>Fielders</h3>
+
+<form action="/player/<%= @player.id() %>/fielder" method="post" class="form-horizontal">
+  <label for="innings_played">Innings Played</label>
+  <input type="text" name="innings_played" id="innings_played" placeholder="Innings Played">
+  <label for="put_outs">Put Out</label>
+  <input type="text" name="put_outs" id="put_outs" placeholder="Puts Out">
+  <label for="fielding_errors">Fielding Errors</label>
+  <input type="text" name="fielding_errors" id="fielding_errors" placeholder="Feilding Errors">
+  <label for="throwing_errors">Throwing Errors</label>
+  <input type="text" name="throwing_errors" id="throwing_errors" placeholder="Throwing Errors">
+  <button type="submit" class="btn btn-danger">Stats!</button>
+</form>
