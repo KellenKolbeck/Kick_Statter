@@ -1,0 +1,94 @@
+.jumbotron {
+  text-align: left;
+  background-color: transparent;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  border:0;
+  margin:0;
+  padding:0;
+}
+
+.img img, .img {
+  width: 450px;
+  height: auto;
+  max-width:100%;
+  border:0;
+  margin:0;
+  padding:0;
+}
+
+.img {
+  margin:0 auto;
+  padding:0;
+  border:0;
+}
+
+.team-list {
+  text-align: center;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+.team-list li {
+  list-style-type: none !important;
+  line-height: 1.5;
+}
+
+.team-list ul {
+  padding:0;
+}
+
+.team-list h3 {
+  font-size: 3em;
+}
+
+.index-label {
+  font-size: 2em;
+}
+
+body {
+  color:white;
+  background: url(http://backgrounds.picaboo.com/download/19/98/198060550d074c08b3b531efe89df5fd/DSC_0002.JPG) no-repeat 100%;
+  background-size: cover;
+}
+
+
+a {
+  color: white !important;
+  font-size: 20px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+a:hover {
+  color:#E82C0C !important;
+  text-decoration: none;
+}
+
+input {
+  color: black;
+}
+
+td {
+  color: black;
+  background-color: white;
+}
+
+th{
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+ul {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+h1 {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+h3 {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+label {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}

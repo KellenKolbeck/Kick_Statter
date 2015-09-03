@@ -55,6 +55,8 @@
   <h4>There are no players on the roster yet.</h4>
 <% end %>
 
+  <br></br>
+
 <form class="form-inline" action="/team/<%= @team.id() %>/player" method="post">
     <label for="name"></label>
     <input type="text" name="name" placeholder="Name" required>
