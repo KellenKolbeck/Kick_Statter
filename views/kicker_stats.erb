@@ -1,0 +1,25 @@
+<h3>Kickers</h3>
+
+<form action="/player/<%= @player.id() %>/kicker" method="post" class="form-horizontal">
+  <label for="k_hits">Hits</label>
+  <input type="text" name="k_hits" id="k_hits" placeholder="Hits">
+  <label for="at_bats">At Bats</label>
+  <input type="text" name="at_bats" id="at_bats" placeholder="At Bats">
+  <label for="singles">Singles</label>
+  <input type="text" name="singles" id="singles" placeholder="Singles">
+  <label for="doubles">Doubles</label>
+  <input type="text" name="doubles" id="doubles" placeholder="Doubles">
+  <label for="triples">Triples</label>
+  <input type="text" name="triples" id="triples" placeholder="Triples">
+  <label for="k_home_runs">Home Runs!</label>
+  <input type="text" name="k_home_runs" id="k_home_runs" placeholder="Home Runs">
+  <label for="k_runs">Runs</label>
+  <input type="text" name="k_runs" id="k_runs" placeholder="Runs">
+  <label for="rbi">RBIs</label>
+  <input type="text" name="rbi" id="rbi" placeholder="RBIs">
+  <label for="k_walks">Walks</label>
+  <input type="text" name="k_walks" id="k_walks" placeholder="Walks">
+  <label for="k_strikeouts">Strikeouts</label>
+  <input type="text" name="k_strikeouts" id="k_strikeouts" placeholder="Strikeouts">
+  <button type="submit" class="btn btn-danger">Stats!</button>
+</form>
