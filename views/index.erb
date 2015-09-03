@@ -1,34 +1,43 @@
 <div class = "jumbotron">
-  <h1 class="text-center">Kick Statter:</h1>
-  <h3 class="text-center">Kickin' stats and taking names!</h3>
+    <div class="img">
+      <img src="img/final-kickstatterlogo.png" alt="Kick Statter Logo" />
+    </div>
 </div>
 
 <% if @team.any?() %>
 
+<div class="team-list">
   <h3>Here are the teams:</h3>
 
-    <ul>
-      <% @team.each() do |team| %>
-        <li><a href="/team/<%= team.id() %>"><%= team.name() %></a></li>
-      <% end %>
-    </ul>
+  <div class="list">
+      <ul>
+        <% @team.each() do |team| %>
+          <li><a href="/team/<%= team.id() %>"><%= team.name() %></a></li>
+        <% end %>
+      </ul>
+  </div>
 
 
 <% else %>
 
   <h3>There are no teams, enter one below!</h3>
+</div>
 
 <% end %>
 
+  <br></br>
+
   <form action="/teams" method="post">
-    <label for="name">Add a team:</label>
+    <div class="index-label">
+      <label for="name">Add a team:</label>
+    </div>
     <div class="input-group">
-      <input type="text" name="name" id="name" class="form-control">
+      <input type="text" name="name" id="name" class="form-control" placeholder="ex. Bad News Bears">
       <input type="hidden" name="win" value="win">
       <input type="hidden" name="loss" value="loss">
       <input type="hidden" name="draw" value="draw">
       <span class="input-group-btn">
-        <button type="submit" class="btn btn-default">Submit</button>
+        <button type="submit" class="btn btn-danger">Submit</button>
       </span>
     </div>
   </form>
