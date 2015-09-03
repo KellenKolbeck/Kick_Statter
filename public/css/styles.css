@@ -8,6 +8,10 @@
   padding:0;
 }
 
+.team-record h1 {
+  font-size: 4em;
+}
+
 .img img, .img {
   width: 450px;
   height: auto;
@@ -54,9 +58,15 @@ body {
 
 
 a {
-  color: white !important;
+  color: white;
   font-size: 20px;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.roster_name a {
+  color: black;
+  text-shadow: none;
+
 }
 
 a:hover {
@@ -91,4 +101,14 @@ h3 {
 
 label {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fielder-logo img {
+  width: 150px;
+  height: auto;
+  max-width:100%;
+  border:0;
+  margin:0;
+  padding:0;
+  float: right;
 }
