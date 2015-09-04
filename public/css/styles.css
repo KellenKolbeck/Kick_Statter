@@ -103,6 +103,14 @@ h3 {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+#stat-header {
+  margin-bottom: 4em;
+}
+
+#team-header {
+  margin-bottom: 1em;
+}
+
 label {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
@@ -115,4 +123,5 @@ label {
   margin:0;
   padding:0;
   float: right;
+
 }
