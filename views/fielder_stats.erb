@@ -2,18 +2,24 @@
   <img src="/img/final-kickstatterlogo.png" alt="Kick Statter Logo">
 </div>
 
-  <h3>Fielders</h3>
+<h3>Fielders</h3>
 
-
-
-  <form action="/player/<%= @player.id() %>/fielder" method="post" class="form-group">
-    <label for="innings_played">Innings Played</label>
-    <input type="text" name="innings_played" id="innings_played" placeholder="Innings Played">
-    <label for="put_outs">Put Out</label>
-    <input type="text" name="put_outs" id="put_outs" placeholder="Puts Out">
-    <label for="fielding_errors">Fielding Errors</label>
-    <input type="text" name="fielding_errors" id="fielding_errors" placeholder="Fielding Errors">
-    <label for="throwing_errors">Throwing Errors</label>
-    <input type="text" name="throwing_errors" id="throwing_errors" placeholder="Throwing Errors">
-    <button type="submit" class="btn btn-danger">Stats!</button>
-  </form>
+<div id="trpanel" class="panel panel-success">
+  <div class="panel-body">
+    <form action="/player/<%= @player.id() %>/fielder" method="post" class="form-horizontal">
+      <div class="col-md-6">
+        <label for="innings_played">Innings Played</label>
+        <input type="text" name="innings_played" id="innings_played" class="form-control" placeholder="Innings Played">
+        <label for="put_outs">Put Out</label>
+        <input type="text" name="put_outs" id="put_outs" class="form-control" placeholder="Puts Out">
+        <button type="submit" class="btn btn-danger">Stats!</button>
+      </div>
+      <div class="col-md-6 col-offset-6">
+        <label for="fielding_errors">Fielding Errors</label>
+        <input type="text" name="fielding_errors" id="fielding_errors" class="form-control" placeholder="Feilding Errors">
+        <label for="throwing_errors">Throwing Errors</label>
+        <input type="text" name="throwing_errors" id="throwing_errors" class="form-control" placeholder="Throwing Errors">
+      </div>
+    </form>
+  </div>
+</div>

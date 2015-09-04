@@ -53,6 +53,7 @@ end
 get("/player/:id") do
   player_id = params.fetch("id").to_i()
   @player = Player.find(player_id)
+  @team = @player.team_id()
   erb(:player)
 end
 

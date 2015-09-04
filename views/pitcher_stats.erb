@@ -4,34 +4,43 @@
 
 <h3>Pitchers</h3>
 
-<form action="/player/<%= @player.id() %>/pitcher" method="post" class="form-horizontal">
-  <label for="batters_faced">Batters Faced</label>
-  <input type="text" name="batters_faced" id="batters_faced" placeholder="Batters Faced">
-  <label for="wins">Wins</label>
-  <input type="text" name="wins" id="wins" placeholder="Wins">
-  <label for="losses">Losses</label>
-  <input type="text" name="losses" id="losses" placeholder="Losses">
-  <label for="earned_runs">Earned Runs</label>
-  <input type="text" name="earned_runs" id="earned_runs" placeholder="Earned Runs">
-  <label for="p_runs">Runs</label>
-  <input type="text" name="p_runs" id="p_runs" placeholder="Runs">
-  <label for="p_hits">Hits</label>
-  <input type="text" name="p_hits" id="p_hits" placeholder="Hits">
-  <label for="p_home_runs">Home Runs</label>
-  <input type="text" name="p_home_runs" id="p_home_runs" placeholder="Home Runs">
-  <label for="p_walks">Walks</label>
-  <input type="text" name="p_walks" id="p_walks" placeholder="Walks">
-  <label for="p_strikeouts">Strikeouts</label>
-  <input type="text" name="p_strikeouts" id="p_strikeouts" placeholder="Strikeouts">
-  <label for="wild_pitch">Wild Pitch</label>
-  <input type="text" name="wild_pitch" id="wild_pitch" placeholder="Wild Pitch">
-  <label for="saves">Saves</label>
-  <input type="text" name="saves" id="saves" placeholder="Saves">
-  <label for="strikes">Strikes</label>
-  <input type="text" name="strikes" id="strikes" placeholder="Strikes">
-  <label for="balls">Balls</label>
-  <input type="text" name="balls" id="balls" placeholder="Balls">
-  <label for="pitches">Pitches</label>
-  <input type="text" name="pitches" id="pitches" placeholder="Pitches">
-  <button type="submit" class="btn btn-danger">Stats!</button>
-</form>
+
+<div id="trpanel" class="panel panel-success">
+  <div class="panel-body">
+    <form action="/player/<%= @player.id() %>/pitcher" method="post" class="form-group">
+      <div class="col-md-6">
+        <label for="batters_faced">Batters Faced</label>
+        <input type="text" name="batters_faced" id="batters_faced" class="form-control" placeholder="Batters Faced">
+        <label for="wins">Wins</label>
+        <input type="text" name="wins" id="wins" class="form-control" placeholder="Wins">
+        <label for="losses">Losses</label>
+        <input type="text" name="losses" id="losses" class="form-control" placeholder="Losses">
+        <label for="earned_runs">Earned Runs</label>
+        <input type="text" name="earned_runs" id="earned_runs" class="form-control" placeholder="Earned Runs">
+        <label for="p_runs">Runs</label>
+        <input type="text" name="p_runs" id="p_runs" class="form-control" placeholder="Runs">
+        <label for="p_hits">Hits</label>
+        <input type="text" name="p_hits" id="p_hits" class="form-control" placeholder="Hits">
+        <label for="p_home_runs">Home Runs</label>
+        <input type="text" name="p_home_runs" id="p_home_runs" class="form-control" placeholder="Home Runs">
+        <button type="submit" class="btn btn-danger">Stats!</button>
+      </div>
+      <div class="col-md-6 col-offset-6">
+        <label for="p_walks">Walks</label>
+        <input type="text" name="p_walks" id="p_walks" class="form-control" placeholder="Walks">
+        <label for="p_strikeouts">Strikeouts</label>
+        <input type="text" name="p_strikeouts" id="p_strikeouts" class="form-control" placeholder="Strikeouts">
+        <label for="wild_pitch">Wild Pitch</label>
+        <input type="text" name="wild_pitch" id="wild_pitch" class="form-control" placeholder="Wild Pitch">
+        <label for="saves">Saves</label>
+        <input type="text" name="saves" id="saves" class="form-control" placeholder="Saves">
+        <label for="strikes">Strikes</label>
+        <input type="text" name="strikes" id="strikes" class="form-control" placeholder="Strikes">
+        <label for="balls">Balls</label>
+        <input type="text" name="balls" id="balls" class="form-control" placeholder="Balls">
+        <label for="pitches">Pitches</label>
+        <input type="text" name="pitches" id="pitches" class="form-control" placeholder="Pitches">
+      </div>
+    </form>
+  </div>
+</div>
