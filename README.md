@@ -12,23 +12,35 @@ _Using this app, users can:_
 * _Enter a number of stats for each individual player._
 * _Stats are kept for pitching, kicking, and fielding._
 
-## Setup
 
-* _Open this repository on GitHub and clone the files within to your computer._
-* _Run the following commands in the terminal on your computer._
+## Installation
 
-```
-bundle install      # installs necessary gem dependencies the app relies on
-postgres            # starts the postgres server in background
-rake db:init        # runs rake db:drop, :create, :migrate, :seed and :test:prepare
-ruby app.rb        # starts the sinatra server
-```
-*_
 
-## Technologies Used
+* _`$ git clone https://github.com/KellenKolbeck/Kick_Statter.git` into your computer_
+* _`$ bundle` to install program dependencies_
+* _`$ postgres` to start a postgres server_
+* _Open new terminal tab_
+* _`$ db:create` to create a database_
+* _`$ db:migrate` to add appropriate table information_
+* _open new tab and run `$ ruby app.rb` in the project directory to run sinatra app_
+* _go to `localhost:4567` in your browser to open webapp_
 
-_Ruby, Postgres, Rake, Active Record, Bootstrap_
-_Testing was preformed with RSpec_
+
+##Technologies Used
+
+* _Written in Ruby_
+* _Site runs on Sinatra_
+* _Error checking with RSpec and Capybara_
+* _Database management with postgresql_
+* _Object Modeling with ActiveRecord_
+
+## Contributing
+
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request :D
 
 ### Legal
 
